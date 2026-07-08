@@ -34,7 +34,7 @@ A lightweight, full-stack web application that allows users to seamlessly batch-
 
 The codebase has been meticulously modularized adhering to clean Model-View-Controller architecture boundaries:
 
-```text
+```
 ├── controllers/
 │   └── pdfController.js      
 ├── routes/
@@ -49,4 +49,8 @@ The codebase has been meticulously modularized adhering to clean Model-View-Cont
 ├── index.js                 # Primary server entrypoint and app configurations
 ├── package.json
 ├── package-lock.json
-└── README.md
+└── README.md 
+```
+
+#### 🔹 Click to watch demo
+[![Watch the Demo Video](public/images/thumbnail.png)](https://drive.google.com/file/d/1ut6qnjPjJ3X91MfGzH9KlnvhIyU2ZD9z/view?usp=share_link)
