@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img to pdf converter</title>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body class="text-center flex justify-center items-center w-screen h-screen bg-white dark:bg-black">
+    <div
+        class="flex  flex-col justify-start items-center w-fit h-fit gap-10 p-10 font-sans bg-amber-200 shadow-[-1px_7px_8px_gray] m-5 sm:w-150">
+        <figure class=" flex gap-2">
+            <img src="images/image_icon.png" alt="img_icon" class="w-10">
+            <img src="images/arrow.png" alt="->" class="w-8">
+            <img src="images/pdf_icon.png" alt="pdf_icon" class="w-8">
+        </figure>
+        <h1 class="font-black  text-4xl tracking-wider text-black "> IMG TO PDF MAKER</h1>
+
+        <p class="text-gray-500 text-lg">Make stunning pdf of your images for free</p>
+
+
+        <form action="/convert" method="post" enctype="multipart/form-data"
+            class="flex justify-center items-center flex-col w-full h-full gap-5" id="PDFform">
+
+
+            <label for="file-input"
+                class="bg-white dark:bg-black hover:bg-sky-50 dark:hover:bg-gray-800 w-full h-full border-dashed border-2 border-purple-500 flex flex-col items-center justify-center cursor-pointer rounded-xl"
+                id="imgFileInputLabel">
+
+                <figure><img src="images/cloud-upload.png" alt="upload" class="w-30"></figure>
+                <p class="text-indigo-500 mb-10">UPLOAD IMAGES</p>
+
+            </label>
+
+            <input type="file" name="images" accept=".jpg, .jpeg, .png" multiple required id="file-input"
+                class="hidden">
+            <figure id="inputImgFilesContainer" class="flex gap-2 w-full max-w-80 overflow-x-auto overflow-y-hidden">
+            </figure>
+            <button type="submit"
+                class="bg-gray-400 cursor-not-allowed  text-white text-xl tracking-wider py-2 px-5 rounded-2xl"
+                id="submitButton">Convert to PDF</button>
+        </form>
+
+
+
+    </div>
+    <script src="form-script.js"></script>
+</body>
+
+</html>
